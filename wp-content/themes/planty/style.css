@@ -34,24 +34,29 @@ Version: 1.0
 }
 
 .main-menu li {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-right: 40px;
+    margin-bottom: -20px;
     font-size: 16px;
     color: #FFFFFF !important;
 }
 
 .menu-item-643 {
-    color: #FFFFFF !important;
     background-color: #DC9F96;
     padding-left: 35px;
     padding-bottom: 25px;
     margin-right: -40px;
 }
 
+.menu-item-643 a {
+    color: #FFFFFF;
+}
+
+
 .admin {
     margin-right: 100px ;
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 300px;
 }
 
@@ -62,10 +67,9 @@ Version: 1.0
 
 /****** Formulaires ******/
 .info {
-    color: #FFFFFF !important;
     background-color: #FFFFFF !important;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .nombre {
@@ -78,11 +82,23 @@ Version: 1.0
     justify-content: space-around;
     background-color: #FFFFFF !important;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
-.columns .one-half {
-    margin-right: 50px;
-    margin-left: 30px;
+label {
+    color: #FFFFFF;
 }
 
+.noms {
+    color: black;
+}
+
+
+.one-half {
+    padding-left: 50px ;
+    padding-right: 50px ;
+}
+
+#wpcf7-cf7sg-form-sans-titre-3 input[type=submit] {
+    color: black;
+}
