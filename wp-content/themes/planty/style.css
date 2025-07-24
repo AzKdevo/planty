@@ -1,0 +1,84 @@
+/*
+Theme Name: planty
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme. Sample child theme.
+Author: Ayaz
+Author URI: http://wpplanty.com/
+Text Domain: planty
+Template: oceanwp
+Version: 1.0
+*/
+
+
+/****** Header & Footer ******/
+.main-menu {
+    margin-top: -15px;
+}
+
+.main-menu li,
+.footer-menu li {
+    list-style: none;
+}
+
+.custom-logo {
+    margin-top: -14px;
+    height: 20px;
+    padding-left: 40px;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.main-menu li {
+    padding-top: 10px;
+    padding-right: 40px;
+    font-size: 16px;
+    color: #FFFFFF !important;
+}
+
+.menu-item-643 {
+    color: #FFFFFF !important;
+    background-color: #DC9F96;
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+
+.admin {
+    margin-right: 100px ;
+}
+
+.footer-menu li {
+    display: flex;
+    justify-content: center;
+}
+
+/****** Formulaires ******/
+.info {
+    color: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.nombre {
+    background-color: #FFFFFF !important;
+    margin-top: -500px;
+    margin-left: 80px;
+}
+
+.informations {
+    justify-content: space-around;
+    background-color: #FFFFFF !important;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.columns .one-half {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
