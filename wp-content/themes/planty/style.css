@@ -52,12 +52,16 @@ Version: 1.0
     color: #FFFFFF;
 }
 
+.menu-item-642 {
+    position: absolute;
+    right: 230px;
+}
 
 .admin {
     margin-right: 100px ;
     position: absolute;
     top: 25px;
-    right: 300px;
+    right: 100px;
 }
 
 .footer-menu li {
@@ -97,7 +101,4 @@ label {
 .one-half {
     padding-left: 40px ;
     padding-right: 40px ;
-}
-
-#wpcf7-cf7sg-form-info-commande input[type=submit] {
 }
