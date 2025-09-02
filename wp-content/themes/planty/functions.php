@@ -56,7 +56,7 @@ function my_custom_menu_item($items, $args)
         $items .= '<li><a class="admin" href="'. site_url('wp-login.php') .'">Admin</a></li>';
     }
     elseif (!is_user_logged_in() && $args->theme_location == 'primary') {
-        $items .= '<li><a class="admin" href="'. site_url('wp-login.php') .'">Se connecter</a></li>';
+        $items .= '<li><a href="'. site_url('wp-login.php') .'"></a></li>';
     }
     return $items;
 }

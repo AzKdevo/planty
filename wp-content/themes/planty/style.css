@@ -12,7 +12,8 @@ Version: 1.0
 
 /****** Header & Footer ******/
 .main-menu {
-    margin-top: -15px;
+    position: relative;
+    z-index: 1000;
 }
 
 .main-menu li,
@@ -21,7 +22,7 @@ Version: 1.0
 }
 
 .custom-logo {
-    margin-top: -14px;
+    margin-top: -20px;
     height: 20px;
     padding-left: 40px;
 }
@@ -34,6 +35,7 @@ Version: 1.0
 }
 
 .main-menu li {
+    margin-top: 50px;
     padding-top: 25px;
     padding-right: 40px;
     margin-bottom: -20px;
@@ -67,6 +69,30 @@ Version: 1.0
 .footer-menu li {
     display: flex;
     justify-content: center;
+}
+
+.footer-menu a:hover {
+    font-weight: 700;
+    color: black;
+}
+
+.admin:hover {
+    font-weight: 700;
+    color: black !important;
+}
+
+.menu-item-642 a:hover {
+    font-weight: 700;
+    color: black;
+}
+
+.menu-item-643:hover {
+    font-weight: 700;
+    background-color: #C02E44;
+}
+
+.menu-item-643 a:hover {
+    color: #FFFFFF;
 }
 
 /****** Formulaires ******/
