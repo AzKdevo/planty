@@ -13,7 +13,9 @@ Version: 1.0
 /****** Header & Footer ******/
 .main-menu {
     position: relative;
-    z-index: 1000;
+    z-index: 10;
+    margin-top: -15px;
+    margin-bottom: -215px;
 }
 
 .main-menu li,
@@ -22,20 +24,16 @@ Version: 1.0
 }
 
 .custom-logo {
-    margin-top: -20px;
     height: 20px;
     padding-left: 40px;
 }
 
 .main-menu ul {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    margin-top: 10px;
 }
 
 .main-menu li {
-    margin-top: 50px;
     padding-top: 25px;
     padding-right: 40px;
     margin-bottom: -20px;
@@ -44,6 +42,8 @@ Version: 1.0
 }
 
 .menu-item-643 {
+    width: 236px;
+    height: 80px;
     background-color: #DC9F96;
     padding-left: 35px;
     padding-bottom: 25px;
@@ -51,19 +51,21 @@ Version: 1.0
 }
 
 .menu-item-643 a {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
     color: #FFFFFF;
 }
 
 .menu-item-642 {
     position: absolute;
-    right: 250px;
+    right: 340px;
 }
 
 .admin {
-    margin-right: 100px ;
     position: absolute;
     top: 25px;
-    right: 100px;
+    right: 290px;
 }
 
 .footer-menu li {
@@ -95,36 +97,201 @@ Version: 1.0
     color: #FFFFFF;
 }
 
-/****** Formulaires ******/
-.info {
-    background-color: #FFFFFF !important;
-    margin-top: 10px;
-    margin-bottom: 20px;
+/* Formulaire de commande */
+.titre {
+    padding-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top: solid 1px #FFFFFF;
 }
 
-.nombre {
-    background-color: #FFFFFF !important;
-    margin-top: -500px;
-    margin-left: 80px;
+.titre,
+.infos h2 {
+    color: #FFFFFF !important;
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 32px;
+    padding-bottom: 5%;
+}
+
+.produits input {
+    width: 39px !important;
+    height: 56px;
+    text-align: center;
+    border-radius: none !important;
+    background: #FFFFFF !important;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+.produits img {
+    width: 192.53px;
+    height: 128.35px;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+    justify-items: left;
+    padding-top: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-top: solid 1px #FFFFFF;
 }
 
 .informations {
-    justify-content: space-around;
+    border-right: solid 1px #FFFFFF;
+    padding-right: 30%;
+}
+
+.livraison {
+    margin-left: 30%;
+}
+
+.infos label {
+    color: #FFFFFF !important;
+}
+
+.infos input,
+.contact input {
+    width: 383px !important;
+    height: 71px;
     background-color: #FFFFFF !important;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    border-radius: 7px !important;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
 }
 
-label {
+.bouton {
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 8%;
+}
+
+.wpcf7 form .wpcf7-submit {
+    width: 198px;
+    height: 55px;
+    text-transform: none;
+    background: #E0B9B4; 
     color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
-.noms {
-    color: black;
+.wpcf7 form .wpcf7-submit:hover {
+    background: #C02E44;
 }
 
+/* Formulaire de contact */
+.wpcf7-textarea {
+    height: 237px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    border-radius: 7px;
+}
 
-.one-half {
-    padding-left: 40px ;
-    padding-right: 40px ;
+.envoyer {
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 425px) {
+    .main-menu li {
+        margin-top: 70px;
+    }
+
+    .menu-item-642 {
+        right: 166px;
+    }
+
+    .admin {
+        top: 95px;
+        right: 145px;
+    }
+
+    .menu-item-643 {
+        width: 135px;
+    }
+
+    .custom-logo {
+        margin-left: 80px;
+    }
+
+    .contact input,
+    .wpcf7-textarea,
+    .infos input {
+        width: 230px !important;
+    }
+
+    .envoyer {
+        margin-left: 15px;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .infos div {
+        margin-top: 50px;
+    }
+
+    .bouton {
+        margin-left: 0px;
+    }
+
+    .titre {
+        margin-left: 20px;
+    }
+
+    .informations {
+        padding-right: 10px;
+        border-right: none;
+    }
+
+    .livraison {
+        margin-left: 0%;
+    }
+
+    .produits {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+/* Responsive Tabelette */
+@media (min-width: 425px) and (max-width: 768px) {
+    .livraison {
+        margin-left: 0%;
+    }
+
+    .contact input,
+    .wpcf7-textarea,
+    .infos input {
+        width: 300px !important;
+    }
+
+    .informations {
+        border-right: none;
+    }
+
+    .informations,
+    .livraison {
+        margin-left: 5%;
+    }
+
+    .contact {
+        margin-left: 10%;
+    }
+
 }
