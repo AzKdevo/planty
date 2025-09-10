@@ -23,14 +23,11 @@ Version: 1.0
     list-style: none;
 }
 
-.custom-logo {
-    height: 20px;
-    padding-left: 40px;
-}
-
 #site-logo {
     position: relative;
     z-index: 11;
+    height: 19px;
+    padding-left: 40px;
 }
 
 .main-menu ul {
@@ -299,4 +296,15 @@ Version: 1.0
         margin-left: 10%;
     }
 
+}
+
+/* Responsive Ordinateur portable */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .infos input {
+        width: 300px !important;
+    }
+
+    .elementor-element-c5d6f02 {
+        margin-top: 235px !important;
+    }
 }
