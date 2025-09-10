@@ -28,6 +28,11 @@ Version: 1.0
     padding-left: 40px;
 }
 
+#site-logo {
+    position: relative;
+    z-index: 11;
+}
+
 .main-menu ul {
     display: flex;
     justify-content: flex-end;
@@ -123,7 +128,7 @@ Version: 1.0
     width: 39px !important;
     height: 56px;
     text-align: center;
-    border-radius: none !important;
+    border-radius: 0px;
     background: #FFFFFF !important;
     margin-top: 10%;
     margin-left: 40%;
